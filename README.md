@@ -27,7 +27,11 @@ docker stop mycontainer
 setup for running ActiveMQ Artemis with mTLS using Docker Compose.
 The key idea is: both the broker and client must present certificates signed by the same CA. The broker needs a keystore (its own cert) and a truststore (the CA that signed client certs).
 
+![Alt text](./assets/artemis_mtls_architecture.svg)
+<img src="./assets/artemis_mtls_architecture.svg">
+
 <img width="1410" height="704" alt="image" src="https://github.com/user-attachments/assets/95cfe825-0e59-4e31-9fe5-45494bdc2417" />
+
 
 ### Generate certificates
 Run this once to produce your CA, broker cert, and client cert. All signed by the same CA root.
